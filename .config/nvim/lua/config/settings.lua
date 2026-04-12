@@ -27,7 +27,7 @@ vim.diagnostic.config({
     },
     signs = true,             -- Show signs in the gutter
     underline = true,         -- Underline problematic code
-    update_in_insert = true, -- Don't update diagnostics while typing
+    update_in_insert = false, -- Don't update diagnostics while typing
     severity_sort = true,     -- Sort by severity (errors first)
 })
 

@@ -50,9 +50,9 @@
 
 
 font-family = JetBrainsMono Nerd Font
-font-size = 12
+font-size = 15
 
-background-opacity = 0.70
+background-opacity = 0.80
 background-blur = true
 theme = TokyoNight Moon
 

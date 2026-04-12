@@ -25,7 +25,6 @@ return {
                     "neocmake",
                     "pylsp",
                     "lua_ls",
-                    "cssls",
                     "jsonls",
                     "bashls",
                     "sqlls",

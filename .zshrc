@@ -23,21 +23,20 @@ prompt_str=' %F{#ebbcba}%f  %F{#31748f}%2~%f ${vcs_info_msg_0_}$ '
 PROMPT=$prompt_str
 
 
-if [ ! -d "$HOME/zsh-syntax-highlighting/" ]; then
-    git clone git@github.com:zsh-users/zsh-syntax-highlighting.git
-    echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+if [ ! -d "$HOME/repos/zsh-syntax-highlighting/" ]; then
+    git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ./repos/
 fi
-source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-source ~/vulkansdk/default/setup-env.sh
-
-# PATH
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$PATH:$HOME/EnvConfig
 
 # ALIAS
 alias xampp="sudo /opt/lampp/xampp"
 
+# PATH
+export PATH=$HOME/.local/bin:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/odin:$PATH"
-export PATH="$HOME/zls/zig-out/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export PATH="$HOME/repos/zls/zig-out/bin:$PATH"
+
+
+# SOURCE
+source $HOME/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/vulkansdk/default/setup-env.sh
