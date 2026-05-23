@@ -8,7 +8,7 @@ local state = {
 local function create_floating_window(opts)
     opts = opts or {}
     local width = opts.width or math.floor(vim.o.columns * 0.7)
-    local height = opts.height or math.floor(vim.o.lines * 0.5)
+    local height = opts.height or math.floor(vim.o.lines * 0.7)
 
     -- Calculate pos to center window
     local col = 0 + (vim.o.columns - width)/2

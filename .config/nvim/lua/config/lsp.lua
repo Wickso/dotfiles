@@ -9,7 +9,9 @@ vim.lsp.enable('zls')
 
 -- C++
 vim.lsp.config['clangd'] = {
-    cmd = { "clangd" },
+    cmd = {
+        "clangd",
+    },
     filetypes = {"c", "cpp", "hpp", "h"},
     root_markers = {".git", ".clang-format", ".clangd", "CMakeLists.txt", "compile_commands.json"},
 }
