@@ -9,9 +9,12 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 10
 vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 50
+
+vim.opt.pumheight = 10
+vim.opt.completeopt = {"menu", "menuone", "noselect"}
 
 vim.cmd(":set termguicolors")
 
@@ -19,7 +22,7 @@ vim.cmd(":set termguicolors")
 vim.diagnostic.config({
     virtual_text = {
         prefix = "●", -- Customize the prefix for virtual text
-        spacing = 2, -- Space between code and virtual text
+        spacing = 4, -- Space between code and virtual text
         -- Optionally format the message
         format = function(diagnostic)
             return string.format("%s", diagnostic.message)

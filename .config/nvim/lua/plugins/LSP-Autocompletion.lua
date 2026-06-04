@@ -63,7 +63,11 @@ return {
                     end,
                 },
                 formatting = {
-                    --format = lspkind.cmp_format(),
+                    format = lspkind.cmp_format(),
+                },
+                completion = {
+                    col_offset = 1,
+                    side_padding = 1,
                 },
                 window = {
                     completion = cmp.config.window.bordered(),
@@ -76,10 +80,10 @@ return {
                     ['<M-k>'] = cmp.mapping.select_prev_item()
                 }),
                 sources = cmp.config.sources({
-                    {name = 'luasnip'},
-                    {name = 'nvim_lsp'},
-                    {name = 'buffer'},
-                    {name = 'path'},
+                    { name = 'luasnip' },
+                    { name = 'nvim_lsp' },
+                    { name = 'buffer' },
+                    { name = 'path' },
                 }),
                 view = {
                     entries = "native"
