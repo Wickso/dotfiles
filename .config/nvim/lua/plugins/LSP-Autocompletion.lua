@@ -85,9 +85,9 @@ return {
                     { name = 'buffer' },
                     { name = 'path' },
                 }),
-                view = {
-                    entries = "native"
-                }
+                experimental = {
+                    --ghost_text = true,
+                },
 
             })
         end
